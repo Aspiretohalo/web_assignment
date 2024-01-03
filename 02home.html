@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspiretohaloのweb期末</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style02.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css" />
+    <link rel="shortcut icon" href="imgs/棒棒糖.png">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/myjs.js"></script>
+    <script src="js/jquery.migrate.min.js"></script>
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="js/jquery.smoove.min.js"></script>
+
+</head>
+
+<body>
+    <script>
+        $(function () {
+            $.ajax({
+                type: 'GET',
+                url: 'http://localhost:3000/index',
+                beforeSend: function (request) {
+                    request.setRequestHeader("Authorization", localStorage.getItem("Authorization"));
+                },
+                success: function (res) {
+                    console.log(res);
+                    if (res.status === 1) {
+                        location.href = 'log_register.html'
+                    }
+                },
+            })
+        })
+    </script>
+    <div class="box">
+        <!-- 顶部导航栏 -->
+        <div class="top-nav w">
+            <div class="logo-school">
+                <img src="imgs/logo.png" alt="">
+            </div>
+            <div class="name">
+                <img src="imgs/web作业 .png" alt="">
+            </div>
+            <ul class="nav-ul">
+                <li><a href="index.html" class="oa">首页</a></li>
+                <li>
+                    <a href="javascript:void(0);" class="oa">绝美家乡</a>
+                    <div class="aboutMe">
+                        <ul class="details">
+                            <li>
+                                <a href="02home.html" class="oa-in">风景与历史</a>
+                            </li>
+                            <li>
+                                <a href="03tasty.html" class="oa-in">特色美食</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </li>
+                <!-- <li>
+                    <a href="05skills.html" class="oa">掌握技能</a>
+                    
+                </li> -->
+                <li><a href="04resume.html" class="oa">个人简历</a></li>
+                <li><a href="shop/shoppingIndex.html" class="oa">漫步时代广场</a></li>
+            </ul>
+        </div>
+        <div class="main02">
+            <div class="clearfix">
+                <div class="card" id="card" style="width: 18rem;">
+                    <img src="imgs/双龙洞.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">双龙洞</h5>
+                        <p class="card-text">
+                            双龙洞是国家重点风景名胜区，位于浙江省金华市北郊的金华山西南山麓。
+                        </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" id="card" style="width: 18rem;">
+                    <img src="imgs/尖峰山.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">尖峰山</h5>
+                        <p class="card-text">
+                            尖峰山又称芙蓉峰，屹立于金华城北，海拔427米，是登临俯瞰金华城市的最佳点之一。
+                        </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" id="card" style="width: 18rem;">
+                    <img src="imgs/万佛塔.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">万佛塔</h5>
+                        <p class="card-text">
+                            万佛塔，老金华城地标性建筑，始建于北宋嘉佑七年（1062）至治平元年（1064）之间。
+                        </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <button type="button" class="btn-close btn-close-white hide-ones2" aria-label="Close"></button>
+
+            </div>
+            <div class="card-hide hide-ones">
+                <div class="img-sight">
+                    <img src="imgs/双龙洞03.jpg" alt="">
+                    <img src="imgs/双龙洞05.jpg" alt="">
+                    <img src="imgs/双龙洞07.jpg" alt="">
+                </div>
+                <p>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp金华双龙洞距金华市区约8公里，坐落在海拔350-450多米的北山南坡，除底层的双龙洞之外，还有中层的冰壶洞和最高的朝真洞。双龙洞分内、外两洞，内洞与外洞仅相隔5米，有一块巨大石屏相隔，仅留长10米，宽3米多的地下河水道。水道水面离地下河顶灰岩仅有0.30米左右的间隙，进内洞须仰卧小舟而入。外洞高大明亮，洞高66余米，长、深各33余米，面积1200多平方米。洞内陈放着一排排石桌、石椅，可容千人品茶避暑。从这里可以知道，双龙洞的景色是无比的美。双龙洞是国家重点风景名胜区，位于浙江省金华市北郊的金华山西南山麓。林海莽莽，水流潺潺，年平均气温比城区低
+                    6 ℃。是一处以山岳森林为背景。地下悬河、岩溶奇观、赤松祖庭为特色。观光旅游、康体休闲、避暑纳凉、海外朝圣为主要功能。
+                </p>
+                <a href="https://baike.baidu.com/item/%E5%8F%8C%E9%BE%99%E6%B4%9E/464751" class="Baidu"
+                    target="_blank">详情查看百度</a>
+
+            </div>
+            <div class="card-hide hide-ones">
+                <div class="img-sight">
+                    <img src="imgs/尖峰山02.jpg" alt="">
+                    <img src="imgs/尖峰山03.jpg" alt="">
+                    <img src="imgs/尖峰山04.jpg" alt="">
+                </div>
+                <p>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp尖峰山又称芙蓉峰，屹立于金华城北，海拔427米，是登临俯瞰金华城市的最佳点之一，登顶需爬一千八百多级台阶，登山者络绎不绝，
+                    它是金华双龙风景名胜区的主要景区之一，且免费，自古为金华人的一种心理凝聚和精神象征，外出远行的金华人用“一日不见尖峰山就要掉眼泪”来形容自己的思乡之情。<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp尖峰山景区以尖峰山为中心，北至黄大仙景区，东至赤松山景区，西至双龙洞景区，南至金华市区，总面积9.29平方公里。尖峰山景区山清水秀，景色宜人。
+                    景区的目标定位是以水清林幽、乡土文化为特色，以民俗观光、休闲度假为主要功能的城郊型森林公园（景区）
+                </p>
+                <a href="https://baike.baidu.com/item/%E5%B0%96%E5%B3%B0%E5%B1%B1/6571252" class="Baidu"
+                    target="_blank">详情查看百度</a>
+
+            </div>
+            <div class="card-hide hide-ones">
+                <div class="img-sight">
+                    <img src="imgs/万佛塔02.jpg" alt="">
+                    <img src="imgs/万佛塔03.jpg" alt="">
+                    <img src="imgs/万佛塔04.jpg" alt="">
+
+                </div>
+                <p>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp万佛塔，老金华城地标性建筑，始建于北宋嘉佑七年（1062）至治平元年（1064）之间。原址位于浙江省金华市区塔下寺的山坡上，九层八角楼阁式砖木结构建筑，由佛僧居政倡导建成，初名叫“密印寺塔”。
+                    明代金华府治图和清代金华府城图中都可见万佛塔醒目的身影。《金华县文史资料第二辑》中有万佛塔形制的描述：“该塔是楼阁式的砖木结构，八角形，初建为九层，道光二十七年大修时，增至十三层，层层棱角飞檐，高达50米。塔体内设扶梯，曲折而上，凭栏远眺，双溪似带，群山如屏。塔身外壁上半部的每块砖上，
+                    雕有长不径尺的精美如来佛像，一排排地结跏趺坐在莲台上，其数万计，故俗称“万佛塔”。由于建造时间早，塔身层次多，规模高大，雕饰华丽，誉满东南，素有‘浙江第一塔’之称，”抗战期间被拆，2014年启动复建，2019年12月31日正式对外开放。
+                </p>
+                <a href="https://baike.baidu.com/item/%E4%B8%87%E4%BD%9B%E5%A1%94/13207610" class="Baidu"
+                    target="_blank">详情查看百度</a>
+
+            </div>
+            <div class="mask hide-ones3">
+
+            </div>
+            <div class="main02_history">
+                <h3>历史介绍</h3>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <p class="card-text">
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp金华，古称婺州，浙江省辖地级市，长江三角洲中心区27城之一
+                            ，G60科创走廊中心城市，金华-义乌都市区被确定为浙江省第四个大都市区。
+                            下辖2个区、3个县，代管4个县级市，总面积10942平方千米，截至2021年，金华市常住人口为712万人，城镇化率为68.7%。<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp金华位于浙江省中部，东邻台州，南毗丽水，西连衢州，北接绍兴、杭州，界于东经119°14′—120°46′30″，北纬28°32′—29°41′之间，地处金衢盆地东段，为浙中丘陵盆地地区，地势南北高、中部低。"三面环山夹一川，盆地错落涵三江"是金华地貌的基本特征，市域内江河分属钱塘江、瓯江、椒江3大水系，市区位于东阳江、武义江和金华江交汇处,面积2049平方公里,建成区面积104.3平方公里。
+                            金华建制已有2200多年。古属越国地，秦入会稽郡。<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp金华古称婺州，因其“地处金星与婺女两星争华之处”得名，自三国吴元宝鼎元年（266）始设东阳郡建置以来，具有1800多年的历史和灿烂文化，是国家历史文化名城。
+                            金华文化属吴越文化，金华人属江浙民系.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="main02_history">
+                <h3>历史改革</h3>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <p class="card-text">
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp金华建制久远，因位于金星与婺女（星）分野，而得名金华。<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp夏商时金华地属百越。《汉书·地理志》记载，百越的分布“自交趾至会稽七八千里，百越杂处，各有种姓”。<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp春秋时属越国，战国后期越国为楚国所灭，遂属楚国。<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp秦、汉为乌伤县（治所在今义乌境内），属会稽郡（绍兴）。东汉设长山县。<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp三国吴宝鼎元年（266年）以会稽郡西部设东阳郡（以郡在瀫水之东、长山之阳得名），治长山（今金华市区），属扬州，领长山（今婺城区、金东区、兰溪）、乌伤（今义乌）、永康、吴宁（今东阳）、丰安（今浦江）、太末（今龙游）、新安（今柯城区、衢江区）、定阳（今常山）、平昌（今遂昌）9县，治设长山。晋延其制。
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp南朝梁绍泰二年（556年）置缙州，陈天嘉三年（562年）撤缙州，东阳郡改名金华郡。“金华”一名源于“金星与婺女争华”之地。<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp隋开皇十三年（593年）改置婺州。大业三年（607年）复置东阳郡。<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp唐武德四年（621年）复改婺州，并分置衢州。天宝元年（742年）改婺州为东阳郡，乾元元年（758年）复为婺州。宋延其制。<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp元至元十三年（1276年）改婺州路。至正十八年（1358年）朱元璋攻取婺州路，改宁越府，至正二十年改金华府。<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp明成化八年（1472年）析遂昌、金华、兰溪、龙游县部分地置汤溪县。金华府领金华、兰溪、东阳、义乌、永康、武义、浦江、汤溪8县，故有“八婺”之称。<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp民国二年（1912年）废府。民国四年（1914年）置金华道，辖区扩及原衢州、严州府。民国十七年（1927年）废道，各县仍直属于省。民国期间，行政督察区序号、辖县、专署驻地时有变换。民国二十八年（1939年）6月，设磐安县，划缙云县之5乡，永康县之3乡，天台县之飞山乡，东阳县等都乡，为磐安县境。<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1949年5月7日，中国人民解放军第二野战军解放金华，设立浙江省第八行政区。<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp10月，改名金华专区辖2市9县。1955年3月，衢州专区撤销并入。嗣后，金华专区辖县（市）续有撤并、复置，并与杭州、丽水等毗邻市地互有调整。1958年11月，撤销汤溪县。1968年4月，改为金华地区。<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1985年5月，撤销金华地区，原金华、衢州两县级市分别升为地级市，实行市管县体制，并于金华城区设立婺城区，郊区设立金华县，同时撤销兰溪县，设立兰溪市（县级）。金华市辖婺城区、兰溪市和金华、永康、武义、东阳、磐安、义乌、浦江7县。原金华地区的龙游、开化、常山、江山县划归衢州市管辖。<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1988年5月，撤销义乌县设立义乌市（县级），撤销东阳县设立东阳市（县级）。<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1992年10月，撤销永康县设立永康市（县级）。<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2000年12月，撤销金华县，与婺城区互有调整，县境东部设立金华市金东区。<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2021年10月，撤销岭上乡建制，将原岭上乡上堂村、后畈村、群乐一村、群乐二村、后坞村、百善村、高塘村等7个行政村划归塔石乡，将原岭上乡下坞村、岭上村、黄岩孔村、蒋畈村、黄麻山村、里门殿村、石埠头村、东会村、苏村村、邵家源村等10个行政村（已撤销）区域范围划归汤溪镇。调整后，塔石乡辖22个行政村，乡政府驻塔石村；汤溪镇辖39个行政村、1个社区，镇政府驻汤溪村城中路49号。<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main02_school">
+                <h3>重点高校</h3>
+                <div class="card border-light">
+                    <div class="card-header">
+                        浙江师范大学
+                    </div>
+                    <div class="card-body">
+                        <img src="imgs/ZJNU.jpg" alt="">
+                        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp浙江师范大学（Zhejiang Normal
+                            University），位于浙江省金华市，是一所以教师教育为特色的综合性省属重点大学，是浙江省首批重点建设高校，入选国家“111计划”、“卓越教师培养计划”、“新工科研究与实践项目”、教育部“教育援外基地、商务部“中国基础教育援外研修基地”、中国—东盟教育培训中心、中国政府奖学金来华留学生接收院校、浙江省十佳对外合作单位、“浙江省国际化特色高校”建设单位，建有浙江省唯一的教育学一级学科重点研究基地。<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp学校前身为杭州师范专科学校，创建于1956年，1958年升格为杭州师范学院。1962年，杭州师范学院与浙江教育学院、浙江体育学院合并，更名为浙江师范学院。1965年，浙江师范学院从杭州搬迁至金华。1980年被列为省属重点高校。1985年更名为浙江师范大学。2000年、2001年、2004年浙江财政学校、浙江幼儿师范学校和金华铁路司机学校相继并入。对口支援衢州学院，与金华市共建金华理工学院。<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp截至2022年3月，设有金华（校本部）、杭州（文二校区、萧山校区）、兰溪3个校区，20个学院（含独立学院）组成；有全日制本（专）科生28000余人（含独立学院），研究生7000余人（其中非全日制研究生1143人），留学生3000余人；有70个本科专业，11个一级学科博士点，1个专业博士学位授权点，30个一级学科硕士点，16个专业硕士学位类别，7个博士后流动站，2个国家“111计划”学科创新引智基地；5个学科进入ESI全球前1%，20个学科列入浙江省一流学科。
+                        </p>
+                        <a href="http://www.zjnu.edu.cn/" class="Baidu" target="_blank">去官网</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main02_school">
+                <h3>重点高中（部分）</h3>
+                <div class="card border-light">
+                    <div class="card-header">
+                        浙江金华第一中学
+                    </div>
+                    <div class="card-body">
+                        <img src="imgs/jhyz.jpg" alt="">
+                        <blockquote class="blockquote mb-0">
+                            <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp浙江金华第一中学（home No.1 High
+                                School，Zhejiang）是浙江省一级重点中学；1959年5月，学校被列为浙江省重点中学；2006年，学校被确定为“浙江省百年名校”；2014年，被授予“浙江省一级普通高中特色示范学校”称号。<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp浙江金华第一中学创建于1902年（清光绪二十八年），校名先后易为金华府中学堂、浙江省立第七中学、金华县工农兵“五七”学校、金华市第一中学等；1998年，改名为浙江金华第一中学。<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp截至2011年3月，浙江金华第一中学共有教职工230余人，专职教师中高级职称101人，中级职称57人，其中浙江省功勋教师1人，浙江省特级教师6人，全国教育系统劳动模范2人，浙江省教坛新秀7人，浙江省优秀教师2人，浙江省名校长培养对象2人，浙江省名师培养对象5人，金华市教坛新秀12人，金华市名校长1人，金华市名师6人，金华市名师培养对象9人，硕士研究生27人，本科学历176人，参加跨世纪骨干教师培训3人，奥林匹克一级教练员4人。
+                            </p>
+                        </blockquote>
+                        <a href="https://baike.baidu.com/item/%E6%B5%99%E6%B1%9F%E9%87%91%E5%8D%8E%E7%AC%AC%E4%B8%80%E4%B8%AD%E5%AD%A6/6128481"
+                            class="Baidu" target="_blank">去官网</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main02_school erzhong">
+                <div class="card border-light">
+                    <div class="card-header">
+                        浙江师范大学附属中学(金华二中)
+                    </div>
+                    <div class="card-body">
+                        <img src="imgs/jhez02.jpg" alt="">
+                        <blockquote class="blockquote mb-0">
+                            <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp浙江师范大学附属中学（High School Affiliated to Zhejiang Normal
+                                University），又名金华市第二中学，是浙江省一级重点中学，也是浙江省现代教育技术实验学校；2014年，又被评为“浙江省一级普通高中特色示范学校”。<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp浙江师范大学附属中学创建于1953年，初名金华新建中学，后历经浙江省金华第二中学、金华县第二中学、浙江师范学院附属中学，1985年更名为浙江师范大学附属中学。<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp截至2012年，浙江师范大学附属中学共有教职员工240人，其中浙江省特级教师6名，浙江省名师名校长培养人选10人，浙江省教坛新秀5人，浙江省优秀教师2人，浙江省模范教师1人，金华市教坛新秀6人，金华市名师名校长培养人选7人。
+                            </p>
+                        </blockquote>
+                        <a href="http://www.ourschool.com.cn/" class="Baidu" target="_blank">去官网</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="middle">
+            <a class="btn fixed_as" href="javascript:void(0);">
+                <i></i>
+            </a>
+            <a class="btn fixed_as" href="javascript:void(0);">
+                <i></i>
+            </a>
+            <a class="btn fixed_as" href="javascript:void(0);">
+                <i></i>
+            </a>
+
+        </div>
+        <div class="hide_msg hide_msg1">
+            <p>QQ:</p>
+            <span></span>
+        </div>
+        <div class="hide_msg hide_msg2">
+            <p style="text-align: center;line-height: 200px;">可放二维码img</p>
+            <span></span>
+        </div>
+        <div class="hide_msg hide_msg3">
+            <p>联系方式：详见QQ</p>
+            <span></span>
+        </div>
+        <div class="bottomFrame">
+            <div class="bottomCenter">
+                <ul>
+                    <li>中国计量大学信息工程学院计算机科学与技术专业</li>
+                    <li>web期末大作业</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 风景卡片
+        var card_sight = document.querySelectorAll('.card')
+        var hide_ones = document.querySelectorAll('.hide-ones')
+        var btn_close = document.querySelector('.btn-close')
+        for (let i = 0; i < 3; i++) {
+            card_sight[i].addEventListener('click', function () {
+                $(hide_ones[i]).show(300)
+                $(".hide-ones2").show(300)
+                $(".hide-ones3").show()
+            })
+
+        }
+        btn_close.addEventListener('click', function () {
+            for (var j = 0; j < hide_ones.length; j++) {
+                $(hide_ones[j]).hide(300)
+                $(".hide-ones2").hide(300)
+                $(".hide-ones3").hide()
+            }
+        })
+        $(".main02_history,.main02_school").smoove({
+            moveY: '80px'
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录注册</title>
+    <link rel="stylesheet" href="css/styleLR.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" href="imgs/棒棒糖.png">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.migrate.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/myjsLR.js"></script>
+
+</head>
+
+<body>
+    <div class="box">
+        <button type="button" class="turnTo btn btn-outline-primary">Change</button>
+        <div class="largeCard">
+            <div class="lrcard1">
+                <div class="login">
+                    <form class="row g-3 needs-validation" novalidate id="login">
+                        <div class="col-md-4">
+                            <label for="validationCustom01" class="form-label">您的用户名</label>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="username form-control" placeholder="name@example.com"
+                                    name="username">
+                                <label for="floatingInput" class="un_label">请输入用户名</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationCustom02" class="form-label">密码</label>
+                            <div class="form-floating">
+                                <input type="password" class="psw_log form-control" placeholder="Password"
+                                    name="password">
+                                <label for="floatingPassword" class="psw_log_label">Password</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input check" id="chekc1" type="checkbox" value="" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                    我已同意服务协议
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12 btn_box">
+                            <button class="btn btn-primary submit" type="submit" id="login">登录</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="lrcard2">
+                <div class="register">
+                    <form class="row g-3 needs-validation" novalidate id="register">
+                        <label for="validationCustom01" class="margin_here form-label">用户名</label>
+                        <div class="margin_here form-floating mb-3">
+                            <input type="text" class="username2 form-control" placeholder="name@example.com"
+                                name="username">
+                            <label for="floatingInput" class="username2_label">用户名</label>
+                        </div>
+                        <span class="sp1 margin_here" style="color: red;"></span>
+                        <label for="validationCustom01" class="margin_here form-label">密码</label>
+                        <div class="margin_here form-floating mb-3">
+                            <input type="password" class="psw form-control" placeholder="name@example.com"
+                                name="password">
+                            <label for="floatingInput" class="psw_label">6-20位字母大小写和数字组合</label>
+                        </div>
+                        <span class="sp2 margin_here" style="color: red;"></span>
+                        <label for="validationCustom01" class="margin_here form-label">确认密码</label>
+                        <div class="margin_here form-floating mb-3">
+                            <input type="password" class="psw2 form-control" placeholder="name@example.com"
+                                name="password2">
+                            <label for="floatingInput" class="psw_label2">确认密码</label>
+                        </div>
+                        <span class="sp3 margin_here" style="color: red;"></span>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input check" id="chekc2" type="checkbox" value="" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                    我已同意服务协议
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="margin_here btn btn-primary submit1" type="submit" onsubmit="return judge()"
+                                id="register">注册</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

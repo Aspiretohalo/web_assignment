@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspiretohaloのweb期末</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style03.css">
+    <link rel="shortcut icon" href="imgs/棒棒糖.png">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/myjs.js"></script>
+    <script src="js/jquery.migrate.min.js"></script>
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="css/style02.css">
+    <script src="js/jquery.smoove.min.js"></script>
+
+</head>
+
+<body>
+    <script>
+        $(function () {
+            $.ajax({
+                type: 'GET',
+                url: 'http://localhost:3000/index',
+                beforeSend: function (request) {
+                    request.setRequestHeader("Authorization", localStorage.getItem("Authorization"));
+                },
+                success: function (res) {
+                    console.log(res);
+                    if (res.status === 1) {
+                        location.href = 'log_register.html'
+                    }
+                },
+            })
+        })
+    </script>
+    <div class="box  bg_tasty">
+        <!-- 顶部导航栏 -->
+        <div class="top-nav w">
+            <div class="logo-school">
+                <img src="imgs/logo.png" alt="">
+            </div>
+            <div class="name">
+                <img src="imgs/web作业 .png" alt="">
+            </div>
+            <ul class="nav-ul">
+                <li><a href="index.html" class="oa">首页</a></li>
+                <li>
+                    <a href="javascript:void(0);" class="oa">绝美家乡</a>
+                    <div class="aboutMe">
+                        <ul class="details">
+                            <li>
+                                <a href="02home.html" class="oa-in">风景与历史</a>
+                            </li>
+                            <li>
+                                <a href="03tasty.html" class="oa-in">特色美食</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </li>
+                <!-- <li>
+                    <a href="05skills.html" class="oa">掌握技能</a>
+                   
+                </li> -->
+                <li><a href="04resume.html" class="oa">个人简历</a></li>
+                <li><a href="shop/shoppingIndex.html" class="oa">漫步时代广场</a></li>
+
+
+            </ul>
+        </div>
+        <div class="main03">
+            <div class="banxin">
+                <div class="words_tasty">
+                    <h3>金华美食</h3>
+                    <p>
+                        每个地方都有特色的美味，享受风景的同时，味蕾也身处一场盛宴。
+                    </p>
+                    <p class="food">
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp“不管是否情愿，生活总在催促我们迈步向前。人们整装、启程、跋涉、落脚，停在哪里，哪里就会燃起灶火。从个体生命的迁徙，到食材的交流运输，从烹调方法的演变，到人生命运的流转，人和食物的匆匆脚步，从来不曾停歇。”<br>
+                        ——《舌尖上的中国》
+                    </p>
+                </div>
+                <img src="imgs/jh_logo.jpg" alt="">
+                <div class="words_tasty2">
+                    <h4>知名特色美食</h4>
+                </div>
+                <div class="clearfix">
+
+                    <div class="jhts">
+                        <img src="imgs/jhht.jpg" alt="">
+                        <div class="jhts_right">
+                            <p>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp金华火腿色泽鲜艳，红白分明，瘦肉香咸带甜，肥肉香而<br>不
+                                腻，美味可口；内含丰富的蛋白质和脂肪，多种维生素和矿<br>物质；制作经冬历夏，经过发酵分解，营养成分更易被人体所<br>吸收，具有养胃生津、益肾壮阳、固骨髓、健足力、愈创口等<br>作用。其外形皮薄爪细，皮色黄亮、形似琵琶、肉色红润、香<br>气浓郁，以色、香、味、形“四绝”闻名于世。
+                            </p>
+                            <a href="https://baike.baidu.com/item/%E9%87%91%E5%8D%8E%E7%81%AB%E8%85%BF/460566"
+                                class="Baidu" target="_blank">详情查看百度</a>
+                        </div>
+                    </div>
+                    <div class="jhts2">
+                        <div class="jhts_left">
+                            <p>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp香松的酥饼，味道极佳；入口酥碎，遇湿消融，即使牙齿脱尽的人也有口福品尝其味；酥饼还以浓烈的陈香和鲜咸的回味显示其特有的魅力，强烈地吸引着顾客；明代已闻名于世、民间更有李白“闻香下马”的传说。
+                            </p>
+                            <a href="https://baike.baidu.com/item/%E9%87%91%E5%8D%8E%E9%85%A5%E9%A5%BC/460014"
+                                class="Baidu" target="_blank">详情查看百度</a>
+                        </div>
+                        <img src="imgs/jhsb.jpg" alt="">
+                    </div>
+                    <div class="jhts">
+                        <img src="imgs/jhfs.jpg" alt="">
+                        <div class="jhts_right">
+                            <p>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp金华种植佛手历史悠久已近千年。金华市土质含微酸性沙壤土，土质疏松、肥沃，非常适应金华佛手的种植；属亚热带季风气候。四季分明，年温适中，热量较优，雨量丰富，日照热量资源丰富。金华佛手果实似花非花，似果非果，有的似观音玉手，有的仿佛力士的拳头，也有两者兼之，奇妙无比，人们誉它为“果中仙品，世间奇卉，药中王”。
+                            </p>
+                            <a href="https://baike.baidu.com/item/%E9%87%91%E5%8D%8E%E4%BD%9B%E6%89%8B/5895952"
+                                class="Baidu" target="_blank">详情查看百度</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <a class="btn fixed_as" href="javascript:void(0);">
+                <i></i>
+            </a>
+            <a class="btn fixed_as" href="javascript:void(0);">
+                <i></i>
+            </a>
+            <a class="btn fixed_as" href="javascript:void(0);">
+                <i></i>
+            </a>
+
+        </div>
+        <div class="hide_msg hide_msg1">
+            <p>QQ:</p>
+            <span></span>
+        </div>
+        <div class="hide_msg hide_msg2">
+            <p style="text-align: center;line-height: 200px;">可放二维码img</p>
+            <span></span>
+        </div>
+        <div class="hide_msg hide_msg3">
+            <p>联系方式：详见QQ</p>
+            <span></span>
+        </div>
+
+        <div class="bottomFrame">
+            <div class="bottomCenter">
+                <ul>
+                    <li>中国计量大学信息工程学院计算机科学与技术专业</li>
+                    <li>web期末大作业</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".jhts").smoove({
+            movex: '80px'
+        });
+        $(".jhts2").smoove({
+            movex: '-80px'
+        });
+    </script>
+</body>
+
+</html>

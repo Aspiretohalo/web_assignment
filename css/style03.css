@@ -1,0 +1,151 @@
+.bg_tasty {
+    background: url(../imgs/banner.png) no-repeat center;
+    background-size: auto 700px;
+}
+
+.main03 {
+    display: inline-block;
+    width: 100%;
+    height: 1000px;
+    padding-left: 200px;
+    margin-top: 200px;
+}
+
+.main03 .banxin {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main03 .banxin .words_tasty {
+    float: left;
+    width: 600px;
+    color: #fff;
+}
+
+.main03 .banxin h3 {
+    font-size: 40px;
+}
+
+.main03 .banxin p {
+    margin-top: 30px;
+}
+
+.main03 .banxin .food {
+    margin-top: 10px;
+}
+
+.main03 .banxin img {
+    border-radius: 2px;
+    margin-left: 100px;
+}
+
+.main03 .banxin .words_tasty2 {
+    width: 1000px;
+    height: 80px;
+    border-bottom: rgb(223, 223, 223) 2px solid;
+    margin-top: 260px;
+    padding-left: 360px;
+
+}
+
+.main03 .banxin .words_tasty2 h4 {
+    font-size: 40px;
+}
+
+.main03 .banxin .jhts {
+    display: inline-block;
+    height: 400px;
+    margin-top: 40px;
+}
+
+.main03 .banxin .jhts img {
+    float: left;
+    width: 500px;
+    border-radius: 5px;
+    margin-left: 0px;
+}
+
+.main03 .banxin .jhts .jhts_right {
+    float: left;
+}
+
+.main03 .banxin .jhts p {
+    width: 460px;
+    margin-left: 50px;
+}
+
+.main03 .banxin .jhts .Baidu {
+    display: inline-block;
+    width: 180px;
+    height: 60px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 50px;
+    background-color: #1e6fff;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+}
+
+.main03 .banxin .jhts .Baidu:hover {
+    background-color: rgb(122, 175, 255);
+}
+
+.main03 .banxin .jhts2 {
+    display: inline-block;
+    height: 400px;
+    margin-top: 30px;
+}
+
+.main03 .banxin .jhts2 img {
+    float: left;
+    width: 500px;
+    border-radius: 5px;
+    margin-left: 0px;
+}
+
+.main03 .banxin .jhts2 .jhts_left {
+    float: left;
+}
+
+.main03 .banxin .jhts2 p {
+    width: 460px;
+    margin-left: 50px;
+}
+
+.main03 .banxin .jhts2 .Baidu {
+    display: inline-block;
+    width: 180px;
+    height: 60px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 50px;
+    background-color: #1e6fff;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+}
+
+.main03 .banxin .jhts2 .Baidu:hover {
+    background-color: rgb(122, 175, 255);
+}
+
+.main03 .card-group {
+    width: 1100px;
+}
+
+.clearfix:after {
+    /*伪元素是行内元素 正常浏览器清除浮动方法*/
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+    /*ie6清除浮动的方式 *号只有IE6-IE7执行，其他浏览器不执行*/
+}

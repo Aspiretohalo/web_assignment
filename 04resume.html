@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspiretohaloのweb期末</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style04.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/style05.css">
+    <link rel="shortcut icon" href="imgs/棒棒糖.png">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/myjs.js"></script>
+    <script src="js/jquery.migrate.min.js"></script>
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="js/jquery.smoove.min.js"></script>
+
+</head>
+
+<body>
+    <script>
+        $(function () {
+            $.ajax({
+                type: 'GET',
+                url: 'http://localhost:3000/index',
+                beforeSend: function (request) {
+                    request.setRequestHeader("Authorization", localStorage.getItem("Authorization"));
+                },
+                success: function (res) {
+                    console.log(res);
+                    if (res.status === 1) {
+                        location.href = 'log_register.html'
+                    }
+                },
+            })
+        })
+    </script>
+    <div class="box bg_resume">
+        <!-- 顶部导航栏 -->
+        <div class="top-nav w">
+            <div class="logo-school">
+                <img src="imgs/logo.png" alt="">
+            </div>
+            <div class="name">
+                <img src="imgs/web作业 .png" alt="">
+            </div>
+            <ul class="nav-ul">
+                <li><a href="index.html" class="oa">首页</a></li>
+                <li>
+                    <a href="javascript:void(0);" class="oa">绝美家乡</a>
+                    <div class="aboutMe">
+                        <ul class="details">
+                            <li>
+                                <a href="02home.html" class="oa-in">风景与历史</a>
+                            </li>
+                            <li>
+                                <a href="03tasty.html" class="oa-in">特色美食</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </li>
+                <!-- <li>
+                    <a href="05skills.html" class="oa">掌握技能</a>
+                    <div class="myHometown">
+
+                    </div>
+                </li> -->
+                <li><a href="04resume.html" class="oa">个人简历</a></li>
+                <li><a href="shop/shoppingIndex.html" class="oa">漫步时代广场</a></li>
+
+
+            </ul>
+        </div>
+
+
+        <div class="main05">
+            <div class="words_skills">
+                <h2>需要学的知识</h2>
+                <div class="former">
+                    <p>前端： html、css、javaScript、html5、css3、es6、JSON、jQuery、Bootstrap、<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;canvas、echarts、Ajax、node.js、MySQL、express、webpack、less、sass<br>
+                    </p>
+                    <p>设计：Photoshop、Adobe illustrate、Premiere、剪映(专业版)、DaVinci Resolve</p>
+                    <p>后端：Java、node.js、python、php、springboot、Django、Laravel</p>
+                </div>
+            </div>
+            <div class="skill_card">
+                <a href="https://www.runoob.com/cprogramming/c-tutorial.html" target="_blank" rel="noopener noreferrer">
+                    <div class="item">
+                        <div class="yuan">
+                            <img src="imgs/learn/c.jpg" alt="">
+                        </div>
+                        <i>C</i>
+                    </div>
+                </a>
+                <a href="https://www.java.com/zh-CN/" target="_blank" rel="noopener noreferrer">
+                    <div class="item">
+                        <div class="yuan">
+                            <img src="imgs/learn/java.jpg" alt="">
+                        </div>
+                        <i>java</i>
+                    </div>
+                </a>
+
+                <a href="https://www.bilibili.com/video/BV14J4114768/?spm_id_from=333.337.search-card.all.click"
+                    target="_blank" rel="noopener noreferrer">
+                    <div class="item">
+                        <div class="yuan">
+                            <img src="imgs/learn/html5.jpg" alt="">
+                        </div>
+                        <i>html</i>
+                    </div>
+                </a>
+                <a href="https://www.bilibili.com/video/BV14J4114768/?spm_id_from=333.337.search-card.all.click"
+                    target="_blank" rel="noopener noreferrer">
+                    <div class="item">
+                        <div class="yuan">
+                            <img src="imgs/learn/css3.jpg" alt="">
+                        </div>
+                        <i>css</i>
+                    </div>
+                </a>
+                <a href="https://www.bilibili.com/video/BV1Sy4y1C7ha/?spm_id_from=333.337.search-card.all.click&vd_source=1f45845301b7ec608b9610fdcfc8d9e2"
+                    target="_blank" rel="noopener noreferrer">
+                    <div class="item">
+                        <div class="yuan">
+                            <img src="imgs/learn/js.jpg" alt="">
+                        </div>
+                        <i>javascript</i>
+                    </div>
+                </a>
+                <a href="https://www.runoob.com/jquery/jquery-tutorial.html" target="_blank" rel="noopener noreferrer">
+                    <div class="item">
+                        <div class="yuan">
+                            <img src="imgs/learn/jQuery.jpg" alt="">
+                        </div>
+                        <i>jquery</i>
+                    </div>
+                </a>
+                <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
+                    <div class="item">
+                        <div class="yuan">
+                            <img src="imgs/learn/boostrap.jpg" alt="">
+                        </div>
+                        <i>boostrap</i>
+                    </div>
+                </a>
+                <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">
+                    <div class="item">
+                        <div class="yuan">
+                            <img src="imgs/learn/nodejs.jpg" alt="">
+                        </div>
+                        <i>node.js</i>
+                    </div>
+                </a>
+                <a href="https://www.runoob.com/python/python-tutorial.html" target="_blank" rel="noopener noreferrer">
+                    <div class="item">
+                        <div class="yuan">
+                            <img src="imgs/learn/python.jpg" alt="">
+                        </div>
+                        <i>python</i>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="middle">
+            <a class="btn fixed_as" href="javascript:void(0);">
+                <i></i>
+            </a>
+            <a class="btn fixed_as" href="javascript:void(0);">
+                <i></i>
+            </a>
+            <a class="btn fixed_as" href="javascript:void(0);">
+                <i></i>
+            </a>
+        </div>
+        <div class="hide_msg hide_msg1">
+            <p>QQ:</p>
+            <span></span>
+        </div>
+        <div class="hide_msg hide_msg2">
+            <p style="text-align: center;line-height: 200px;">可放二维码img</p>
+            <span></span>
+        </div>
+        <div class="hide_msg hide_msg3">
+            <p>联系方式：详见QQ</p>
+            <span></span>
+        </div>
+        <div class="bottomFrame">
+            <div class="bottomCenter">
+                <ul>
+                    <li>中国计量大学信息工程学院计算机科学与技术专业</li>
+                    <li>web期末大作业</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".resume_page").smoove({
+            offset: '50%',
+            moveX: '50px',
+            moveY: '50px'
+        });
+
+        $(".item").smoove({
+            offset: '10%',
+            moveX: '100px',
+            moveY: '100px',
+        });
+    </script>
+</body>
+
+</html>

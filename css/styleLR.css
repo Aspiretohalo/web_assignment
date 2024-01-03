@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: #f1f1f1; */
+    background-image: linear-gradient(to top,
+            #f3e7e9 0%,
+            #e3eeff 99%,
+            #e3eeff 100%);
+    animation: gradientBG 5s ease infinite;
+    background-size: 600% 600%;
+}
+
+.box {
+    width: 1520px;
+    margin: 0 auto;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.btn {
+    margin-left: 500px;
+    margin-top: 300px;
+}
+
+.box .largeCard {
+    left: 900px;
+    top: -200px;
+    position: relative;
+    width: 350px;
+    height: 500px;
+    margin-right: 200px;
+}
+
+.box .lrcard1,
+.box .lrcard2 {
+    position: absolute;
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 3px 5px 10px #000, -3px 5px 10px rgb(76, 76, 76);
+}
+
+.box .lrcard1 {
+    transition: all 1s;
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+.box .lrcard2 {
+    transition: all 1s;
+    backface-visibility: hidden;
+    transform: perspective(1000px) rotateY(-180deg);
+}
+
+.box .lrcard1 .login {
+    width: 350px;
+    padding: 80px 50px;
+
+}
+
+.box .lrcard2 .register {
+    width: 350px;
+    padding: 40px 50px;
+
+}
+
+
+.box .lrcard1 .login .col-12 .btn_box {
+    width: 100%;
+}
+
+.box .lrcard1 .login .col-12 .btn,
+.box .lrcard2 .register .col-12 .btn {
+    width: 240px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.box .lrcard1 .login .col-md-4 {
+    width: 250px;
+
+}
+
+.col-md-4 {
+    width: 100%;
+}
+
+.lrcard2 .margin_here {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.turnTo {
+    width: 150px;
+    height: 50px;
+}

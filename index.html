@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspiretohaloのweb期末</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/style02.css">
+    <link rel="shortcut icon" href="imgs/棒棒糖.png">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/myjs.js"></script>
+    <script src="js/jquery.migrate.min.js"></script>
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(function () {
+            $.ajax({
+                type: 'GET',
+                url: 'http://localhost:3000/index',
+                beforeSend: function (request) {
+                    request.setRequestHeader("Authorization", localStorage.getItem("Authorization"));
+                },
+                success: function (res) {
+                    console.log(res);
+                    if (res.status === 1) {
+                        location.href = 'log_register.html'
+                    }
+
+                },
+            })
+        })
+    </script>
+    <div class="box">
+        <!-- 顶部导航栏 -->
+        <div class="top-nav w">
+            <div class="logo-school">
+                <img src="imgs/logo.png" alt="">
+            </div>
+            <div class="name">
+                <img src="imgs/web作业 .png" alt="">
+            </div>
+            <ul class="nav-ul">
+                <li><a href="index.html" class="oa">首页</a></li>
+                <li>
+                    <a href="javascript:void(0);" class="oa">绝美家乡</a>
+                    <div class="aboutMe">
+                        <ul class="details">
+                            <li>
+                                <a href="02home.html" class="oa-in">风景与历史</a>
+                            </li>
+                            <li>
+                                <a href="03tasty.html" class="oa-in">特色美食</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </li>
+                <!-- <li>
+                    <a href="05skills.html" class="oa">掌握技能</a>
+                   
+                </li> -->
+                <li><a href="04resume.html" class="oa">个人简历</a></li>
+                <li><a href="shop/shoppingIndex.html" class="oa">漫步时代广场</a></li>
+            </ul>
+        </div>
+        <!-- 第一主页 -->
+        <div class="main1">
+            <div class="words">
+                <h1>欢迎来到这个世界！</h1>
+                <p>愿你万事胜意，生活会变得越来越好的</p>
+                <a href="javascript:void(0);" class="test01" id="lucky">增加幸运值</a>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 10%"
+                        aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="myVideo">
+                <video height="400px" autoplay loop muted>
+                    <source src="videos/school.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <!-- 轮播图 -->
+        <div class="swiper">
+            <div class="line autoplay">
+                <div class="pic" data-index="0">
+                    <a href="https://www.cjlu.edu.cn/xxzl1/xxgk2.htm" target="_blank">
+                        <span class="imgs">
+                            <img src="imgs/jl1.jpg" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="pic" data-index="1">
+                    <a href="https://www.cjlu.edu.cn/xxzl1/zzjg.htm" target="_blank">
+                        <span class="imgs">
+                            <img src="imgs/jl2.jpg" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="pic" data-index="2">
+                    <a href="02home.html">
+                        <span class="imgs">
+                            <img src="imgs/双龙洞.jpg" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="pic" data-index="3">
+                    <a href="02home.html">
+                        <span class="imgs">
+                            <img src="imgs/jhez03.jpg" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="pic" data-index="4">
+                    <a href="03tasty.html">
+                        <span class="imgs">
+                            <img src="imgs/jhfs.jpg" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="pic" data-index="5">
+                    <a href="04resume.html">
+                        <span class="imgs">
+                            <img src="imgs/myResume.jpg" alt="">
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="zgjldx">
+            <div class="main02_history">
+                <h3>中国计量大学</h3>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <p class="card-text">
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp中国计量大学是一所以计量、标准、质量、市场监管和检验检疫为办学特色的高等院校。学校前身是1978年由国家计量总局创建的杭州计量学校，1985年经教育部批准升格为中国计量学院，2016年更名为中国计量大学，2019年成为浙江省与国家市场监管总局共建大学和浙江省重点建设大学。2021年，经国务院学位委员会审核，学校成功获批博士学位授予单位。
+                            <br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp学校设有博士学位授权一级学科点2个、硕士学位授权一级学科点15个、硕士专业学位授权点11个；“省市共建”一流学科1个，浙江省一流学科10个。ESI全球排名前1%学科4个。国家级一流专业9个、国家特色专业4个、国家级专业综合改革试点专业1个；省级一流专业19个，省级优势专业7个、省特色专业12个，教育部“卓越工程师教育培养计划”专业5个；国家级一流课程6门，国家级精品课程、国家级精品资源共享课、国家级双语教学示范课程等7门，浙江省一流课程79门，省级精品课程22门；国家级实验教学示范中心1个，国家级虚拟仿真实验教学中心1个，省级实验教学示范中心10个；国家级人才培养模式创新实验区1个，全国示范性工程专业学位研究生联合培养基地1个。
+                            <br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp学校设有19个学院（部、中心），现有全日制在校普通本科生1.6万余人、研究生3600余人。现有专任教师1500余人，其中具有高级职称教师700余人，具有博士学位教师近70%。有共享中国工程院院士2人，国家“万人计划”、长江学者等国家级人才20余人次，浙江省特级专家、浙江省“万人计划”等省部级人才60余人次。有全国高校黄大年式教师团队1个、国家级教学团队1个；浙江省高校黄大年式教师团队1个、浙江省高校教学团队5个。获国家级、省级教学成果奖22项。获得全球首届唯一的“标准化高等教育奖”。
+                            <br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp学校现有国家质检中心、国家市场监管总局重点实验室、国际科技合作基地、国家地方联合工程实验室、教育部工程研究中心、浙江省国际科技合作基地、浙江省重点实验室、浙江省工程实验室（工程研究中心）、浙江省新型（高校）智库、浙江省2011协同创新中心等省部级以上科研平台近40个，高水平研究院35个；作为主要单位参与“超高灵敏极弱磁场和惯性测量装置”国家重大科技基础设施的培育建设工作。获国家科学技术二等奖3项、省部级奖励百余项。拥有1个国家大学科技园，地方园区2个，累计孵化企业474家，其中，国家级高新技术企业21家、国家科技型中小企业3家。
+                            <br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp学校入选“全国创新创业典型经验高校50强”“浙江省普通高校示范性创业学院”“国家知识产权试点高校”。近五年本科毕业生去向落实率稳居全省重点建设高校前五位。2021年在省属高校学科竞赛评估中位列第五，数学建模竞赛连续多年排序全国前列、浙江第一。获全国高校校园文化建设优秀成果一等奖；原创大型音乐舞蹈史诗《千秋计量》，获教育部“礼敬中华优秀传统文化”特色展示项目，2021年于北京会议中心展演。建有国家创新人才培养示范基地、国家计量法治研究基地、ISO国际标准化培训基地（杭州）、国际标准化人才培训基地等高水平行业人才培养基地，面向行业机构开展计量、标准、质量专业人才培训，学员累计达2.7万人。
+                            <br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp学校深入对接国家市场监督管理总局及其直属单位、地方市场监督管理部门，积极承担国家计量战略咨询委员会秘书处工作，与中国计量科学研究院、浙江省市场监督管理局、浙江省商务厅、浙江省应急管理厅、宁夏市场监督管理厅等开展战略合作。建有地方研究院10个、地方技术转移机构17个、产业技术联盟30个。作为牵头单位，联合13所高校共同发起成立“长三角高水平行业特色大学联盟”。
+                            <br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp学校与国外50余所高校和研究机构建立合作，举办中外合作办学本科教育项目2项。建有布拉格金融管理大学孔子学院、浙江—捷克布拉格丝路学院、浙江—捷克人文交流中心。牵头成立全球首个“一带一路”标准化教育与研究大学联盟，来自36个国家和地区的117所高校加盟，并建立“一带一路”学院。建有与德国德累斯顿市政府联合成立的杭州—德累斯顿联络办公室。
+                            <br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp面向新百年，中国计量大学坚持以2004年习近平同志视察我校时重要指示精神为指引，秉承“精思国计、细量民生”校训精神，绰厉奋发、笃行致远，朝着全面建成特色鲜明、国际知名的高水平大学不懈奋斗。
+                            <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <a class="btn fixed_as" href="javascript:void(0);">
+                <i></i>
+            </a>
+            <a class="btn fixed_as" href="javascript:void(0);">
+                <i></i>
+            </a>
+            <a class="btn fixed_as" href="javascript:void(0);">
+                <i></i>
+            </a>
+
+        </div>
+        <div class="hide_msg hide_msg1">
+            <p>QQ:</p>
+            <span></span>
+        </div>
+        <div class="hide_msg hide_msg2">
+            <p style="text-align: center;line-height: 200px;">可放二维码img</p>
+            <span></span>
+        </div>
+        <div class="hide_msg hide_msg3">
+            <p>联系方式：详见QQ</p>
+            <span></span>
+        </div>
+        <!-- 更多信息 -->
+        <div class="msg">
+
+        </div>
+        <div class="bottomFrame">
+            <div class="bottomCenter">
+                <ul>
+                    <li>中国计量大学信息工程学院计算机科学与技术专业</li>
+                    <li>web期末大作业</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        var lucky = document.querySelector("#lucky")
+        var bar = document.querySelector('.progress-bar')
+        let w = 10
+        lucky.addEventListener('click', function () {
+            w += 10
+            bar.style.cssText = "width:" + w + "%";
+        })
+    </script>
+
+</body>
+
+</html>

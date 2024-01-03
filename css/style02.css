@@ -1,0 +1,169 @@
+p {
+    font-size: 16px;
+}
+
+.main02 {
+    display: inline-block;
+    width: 100%;
+    perspective: none !important;
+    padding-left: 200px;
+    margin-top: 200px;
+}
+
+.main02 #card {
+    position: relative;
+    float: left;
+    margin-left: 60px;
+    transition: all 0.5s;
+}
+
+.main02 #card:hover {
+    box-shadow: 10px 8px 10px #000;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.hide-ones,
+.hide-ones3,
+.hide-ones2 {
+    display: none;
+}
+
+.main02 .card-hide {
+    position: fixed;
+    z-index: 5;
+    left: 250px;
+    top: 100px;
+    width: 1000px;
+    height: 550px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.main02 .card-hide img {
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 8px;
+}
+
+.main02 .card-hide p {
+    float: left;
+    margin-top: 50px;
+    width: 700px;
+}
+
+.main02 .card-hide .Baidu {
+    display: inline-block;
+    width: 180px;
+    height: 60px;
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-left: 50px;
+    background-color: #1e6fff;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+}
+
+.main02_school .card-body img {
+    border-radius: 3px;
+}
+
+.main02 .card-hide .Baidu:hover {
+    background-color: rgb(122, 175, 255);
+}
+
+.main02 .btn-close {
+    position: fixed;
+    z-index: 5;
+    top: 100px;
+    margin-left: 10px;
+    border: 2px solid #000;
+}
+
+.mask {
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+}
+
+.main02 .main02_history {
+    display: block;
+    width: 800px;
+    margin-top: 200px;
+    margin-left: 200px;
+}
+
+.main02 .main02_history .card-body {
+    background-color: rgb(222, 222, 222);
+}
+
+.main02 .main02_school {
+    display: block;
+    width: 800px;
+    margin-top: 130px;
+    margin-left: 200px;
+    border: none;
+}
+
+.main02 .erzhong {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.main02 .main02_school .card-body {
+    position: relative;
+    padding-left: 0;
+}
+
+.main02 .main02_school .card-body p {
+    padding: 0 50px;
+}
+
+.main02 .main02_school .card-body img {
+    float: left;
+    width: 800px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.main02 .main02_school .card-body a {
+    float: right;
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #1e6fff;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 10px;
+    margin-right: 60px;
+}
+
+.main02 .main02_school .card-body a:hover {
+    background-color: rgb(122, 175, 255);
+}
+
+.clearfix:after {
+    /*伪元素是行内元素 正常浏览器清除浮动方法*/
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+    /*ie6清除浮动的方式 *号只有IE6-IE7执行，其他浏览器不执行*/
+}
